@@ -1,0 +1,32 @@
+{
+    "img": [
+        {
+            "id": "1",
+            "img": "img/img1.avif"
+        },
+        {
+            "id": "2",
+            "img": "img2.avif"
+        },
+        {
+            "id": "3",
+            "img": "img3.avif"
+        },
+        {
+            "id": "4",
+            "img": "img/img4.jpg"
+        },
+        {
+            "id": "5",
+            "img": "img/img5.jpg"
+        },
+        {
+            "id": "6",
+            "img": "img6.webp"
+        },
+        {
+            "id": "7",
+            "img": "img7.jpg"
+        }
+    ]
+}
