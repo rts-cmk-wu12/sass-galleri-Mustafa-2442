@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $background-color;
+}
+
+header {
+    background-color: $header-background;
+    color: $primary-color;
+    padding: 1rem;
+    text-align: center;
+
+    .search-bar {
+        width: 80%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    h2 {
+        margin: 1rem 0;
+    }
+
+    nav {
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            li {
+                cursor: pointer;
+                @include transition(color);
+                
+                &:hover {
+                    color: $nav-hover-color;
+                }
+            }
+        }
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // Four columns
+    gap: 10px;
+    padding: 1rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        @include transition(all);
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+footer {
+    background-color: $header-background; // Use the same background color as the header
+    color: $primary-color; 
+    text-align: center;
+    padding: 1rem 0; // Adjust padding to control height
+    height: 100px; // Set a fixed height for the footer
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
